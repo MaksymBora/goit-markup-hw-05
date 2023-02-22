@@ -586,6 +586,49 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+/* thumb hover effect */
+
+.portfolio-thumb {
+  position: relative;
+}
+
+.thumb-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+
+  opacity: 0;
+  letter-spacing: 0.02em;
+  color: var(--team-section-color);
+}
+
+.portfolio-thumb::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--btn-bg-color);
+  opacity: 0;
+}
+
+.portfolio-thumb:hover::before {
+  opacity: 1;
+}
+
+.portfolio-thumb:hover .thumb-text {
+  opacity: 1;
+}
+
+/*ˆ thumb hover effect ˆ*/
+
 .card > .card-window {
   padding: 32px 16px;
   border: 1px solid var(--border-card-portfolio-color);
