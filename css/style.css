@@ -663,9 +663,9 @@ img {
   padding-right: 32px;
   padding-top: 40px;
 
-  opacity: 0;
   letter-spacing: 0.02em;
   color: var(--team-section-color);
+  opacity: 0;
 }
 
 .portfolio-thumb::before {
@@ -681,11 +681,13 @@ img {
   opacity: 0;
 }
 
-.portfolio-thumb:hover::before {
+.card:hover .portfolio-thumb::before,
+.card:focus .portfolio-thumb::before {
   opacity: 1;
 }
 
-.portfolio-thumb:hover .thumb-text {
+.card:hover .thumb-text,
+.card:focus .thumb-text {
   opacity: 1;
 }
 
