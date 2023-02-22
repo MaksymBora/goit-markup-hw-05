@@ -117,7 +117,21 @@ img {
 }
 
 .menu-link.current {
+  position: relative;
   color: var(--items-active-color);
+}
+
+.menu-link.current::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  content: '';
+  width: 48px;
+  height: 4px;
+  background-color: var(--btn-hover-color);
+  border-radius: 4px;
 }
 
 .main-nav {
