@@ -671,7 +671,7 @@ img {
 .portfolio-thumb::before {
   position: absolute;
   display: block;
-  top: 0;
+  bottom: 0;
   left: 0;
   content: '';
   width: 100%;
